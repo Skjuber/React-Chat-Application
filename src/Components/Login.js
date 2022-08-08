@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Login.css";
 
 const Login = (props) => {
   const [username, setUsername] = useState("");
@@ -9,28 +10,33 @@ const Login = (props) => {
   };
 
   const onSubmitUsernameHandler = () => {
+    const enteredUsername = username;
+
+    if (enteredUsername.trim().length === 0) {
+      alert("USERNAME CANNOT BE EMPTY!");
+
+      return;
+    }
+
     //e.preventDefault();
     // sruši se kad napravim ovo ;
-    const enteredUsername = username;
-    console.log(enteredUsername);
+    else console.log(enteredUsername);
     props.onLogin(enteredUsername);
   };
 
   return (
     <div>
-      <div className="App-header">
-        <h2>
-          Log In with your username
-          <input
-            type="text"
-            placeholder="Log with your username"
-            value={username}
-            onChange={usernameChangeHandler}
-          />
-          <button onClick={onSubmitUsernameHandler} className="LoggedInButton">
-            Log in
-          </button>
-        </h2>
+      <div className="Login">
+        <h5>Log In with your username</h5>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          value={username}
+          onChange={usernameChangeHandler}
+        />
+        <button onClick={onSubmitUsernameHandler} className="LoggedInButton">
+          Log in
+        </button>
       </div>
     </div>
   );

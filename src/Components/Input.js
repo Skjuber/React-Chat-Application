@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-
+import "./Input.css";
 const Input = (props) => {
   const enteredTextRef = useRef();
 

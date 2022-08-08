@@ -1,0 +1,23 @@
+input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--color-green);
+    flex-grow: 1;
+    
+  }
+  
+  input:focus {
+    outline: none;
+  }
+
+  
+h3{
+
+  overflow: visible;
+  
+  text-align: center;
+  color:  red;
+
+
+}

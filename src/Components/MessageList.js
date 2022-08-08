@@ -1,3 +1,5 @@
+import "./MessageList.css";
+
 const MessageList = ({ messages, currentMember }) => {
   const renderMessages = (message) => {
     const { data, id, member } = message;

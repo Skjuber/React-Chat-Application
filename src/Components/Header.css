@@ -1,0 +1,14 @@
+.App-header { 
+    overflow: visible;
+    width: 100%;
+    text-align: center;
+    color: var(--color-green);
+    font-size:xx-large;
+    font-weight: 2000;
+  }
+
+  .App-header-title {
+    color: var(--color-green);
+    letter-spacing: 2px;
+    font-weight: 400;
+  }

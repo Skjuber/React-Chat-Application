@@ -15,14 +15,7 @@
   font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
 
-.App-header { 
-  overflow: visible;
-  width: 100%;
-  text-align: center;
-  color: var(--color-green);
-  font-size:xx-large;
-  font-weight: 2000;
-}
+
 
 .Messages-list {
   padding: 20px 0;
@@ -155,11 +148,7 @@ button {
 }
 
 
-.App-header-title {
-  color: var(--color-green);
-  letter-spacing: 2px;
-  font-weight: 400;
-}
+
 
 h3{
 
