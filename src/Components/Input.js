@@ -11,14 +11,14 @@ const Input = (props) => {
 
     if (enteredText.trim().length === 0) {
       e.preventDefault();
-//
+
       setError(1);
 
       return;
     } else {
       e.preventDefault();
 
-      props.onSendMessage(enteredText);
+      props.sendMessage(enteredText);
 
       enteredTextRef.current.value = "";
     }
