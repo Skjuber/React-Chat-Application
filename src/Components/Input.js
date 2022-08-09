@@ -26,24 +26,25 @@ const Input = (props) => {
 
   return (
     <div>
-      <div>
+      <div className="input__error">
         <h3>{error && <div>PORUKA NE MOŽE BITI PRAZNA!!!</div>}</h3>
-
-        <form onSubmit={onSubmitHandler}>
-          <input
-            style={{
-              // Promjena
-              borderColor: error ? "red" : "#00645b",
-              background: error ? "salmon" : "transparent",
-            }}
-            type="text"
-            placeholder="Napišite poruku i stisnite Enter"
-            autoFocus={true}
-            ref={enteredTextRef}
-            onChange={errorHandler}
-          />
-          <button type="submit">Send</button>
-        </form>
+        <div className="input__form">
+          <form onSubmit={onSubmitHandler} className="input">
+            <input
+              style={{
+                // Promjena
+                borderColor: error ? "red" : "#00645b",
+                background: error ? "salmon" : "transparent",
+              }}
+              type="text"
+              placeholder="Napišite poruku i stisnite Enter"
+              autoFocus={true}
+              ref={enteredTextRef}
+              onChange={errorHandler}
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,19 @@
-.Login { 
+.login { 
     
     width: 100%;
     text-align: center;
     color: var(--color-green);
     font-size:xx-large;
     font-weight: 2000;
+  }
+
+  .login__input input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--color-green);
+    flex-grow: 1;
+    
   }
 
   .LoggedInButton{
@@ -17,4 +26,27 @@
     border-radius: 8px;
     margin-left: 15px;
   
+  }
+
+  .form__avatar-input {
+    width: 99%;
+    height: 60%;
+    border-radius: 15px;
+    background-color: #dfdbdb;
+  }
+
+ 
+
+  select{
+   
+   
+    color: var(--color-green);
+    
+ 
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--color-green);
+    flex-grow: 1;
+ 
   }

@@ -14,12 +14,7 @@ const MessageList = ({ messages, currentMember }) => {
     // Kako se točno poruka renderira ode?
     return (
       <li className={className} key={id}>
-        <span
-          className="avatar"
-          style={{
-            backgroundColor: member.clientData.color,
-          }}
-        />
+        <span className="emoji">{member.clientData.avatar}</span>
         <div className="Message-content">
           <div
             className="username"

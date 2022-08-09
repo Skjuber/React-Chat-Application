@@ -3,14 +3,21 @@ import "./Login.css";
 
 const Login = (props) => {
   const [username, setUsername] = useState("");
+
   console.log(username);
+  const [color, setColor] = useState("🦄");
 
   const usernameChangeHandler = (event) => {
     setUsername(event.target.value);
   };
 
+  const colorChangeHandler = (event) => {
+    setColor(event.target.value);
+  };
+
   const onSubmitUsernameHandler = () => {
     const enteredUsername = username;
+    const enteredColor = color;
 
     if (enteredUsername.trim().length === 0) {
       alert("USERNAME CANNOT BE EMPTY!");
@@ -21,12 +28,13 @@ const Login = (props) => {
     //e.preventDefault();
     // sruši se kad napravim ovo ;
     else console.log(enteredUsername);
-    props.onLogin(enteredUsername);
+    console.log(enteredColor);
+    props.onLogin(enteredUsername, enteredColor);
   };
 
   return (
-    <div>
-      <div className="Login">
+    <div className="login">
+      <div className="login__input ">
         <h5>Log In with your username</h5>
         <input
           type="text"
@@ -34,6 +42,110 @@ const Login = (props) => {
           value={username}
           onChange={usernameChangeHandler}
         />
+
+        <select onChange={colorChangeHandler}>
+          <option value="👨‍🌾">👨‍🌾</option>
+          <option value="👩‍🌾">👩‍🌾</option>
+          <option value="👨‍⚕️">👨‍⚕️</option>
+          <option value="👨‍🎓">👨‍🎓</option>
+          <option value="👩‍🎓">👩‍🎓</option>
+          <option value="👨‍🏫">👨‍🏫</option>
+          <option value="👨‍⚖️">👨‍⚖️</option>
+          <option value="🧑‍⚖️">🧑‍⚖️</option>
+          <option value="👨‍🍳">👨‍🍳</option>
+          <option value="👩‍🍳">👩‍🍳</option>
+          <option value="👨‍🔧">👨‍🔧</option>
+          <option value="👩‍🔧">👩‍🔧</option>
+          <option value="👨‍💻">👨‍💻</option>
+          <option value="👨‍🚀">👨‍🚀</option>
+          <option value="👨‍🎨">👨‍🎨</option>
+          <option value="👨‍✈️">👨‍✈️</option>
+          <option value="👨‍🚒">👨‍🚒</option>
+          <option value="👩‍🚒">👩‍🚒</option>
+          <option value="👮">👮</option>
+          <option value="👮‍♀️">👮‍♀️</option>
+          <option value="💂‍♂️">💂‍♂️</option>
+          <option value="💂‍♀️">💂‍♀️</option>
+          <option value="🤱">🤱</option>
+          <option value="👩‍🍼">👩‍🍼</option>
+          <option value="👨‍🍼">👨‍🍼</option>
+          <option value="🤰">🤰</option>
+          <option value="👳‍♂️">👳‍♂️</option>
+          <option value="👳‍♀️">👳‍♀️</option>
+          <option value="🧕">🧕</option>
+          <option value="👨‍🏭">👨‍🏭</option>
+          <option value="👩‍🏭">👩‍🏭</option>
+          <option value="👨‍💼">👨‍💼</option>
+          <option value="👩‍💼">👩‍💼</option>
+          <option value="👨‍🔬">👨‍🔬</option>
+          <option value="👩‍🔬">👩‍🔬</option>
+          <option value="🦄">🦄</option>
+          <option value="🐀">🐀</option>
+          <option value="🦁">🦁</option>
+          <option value="🦊">🦊</option>
+          <option value="🦝">🦝</option>
+          <option value="💀">💀</option>
+          <option value="🐶">🐶</option>
+          <option value="🦓">🦓</option>
+          <option value="🤖">🤖</option>
+          <option value="🎅">🎅</option>
+          <option value="🧝">🧝</option>
+          <option value="☃️">☃️</option>
+          <option value="😈">😈</option>
+          <option value="👽">👽</option>
+          <option value="👾">👾</option>
+          <option value="🕵️">🕵️</option>
+          <option value="👹">👹</option>
+          <option value="🤡">🤡</option>
+          <option value="🧙">🧙</option>
+          <option value="🧛">🧛</option>
+          <option value="🧞">🧞</option>
+          <option value="🌚">🌚</option>
+          <option value="👻">👻</option>
+          <option value="🎃">🎃</option>
+          <option value="👨‍🎤">👨‍🎤</option>
+          <option value="👩‍🎤">👩‍🎤</option>
+          <option value="🍕">🍕</option>
+          <option value="🏴">🏴</option>
+          <option value="🗽">🗽</option>
+          <option value="🤿">🤿</option>
+          <option value="🥶">🥶</option>
+          <option value="🏂">🏂</option>
+          <option value="✝️">✝️</option>
+          <option value="🏴‍☠️">🏴‍☠️</option>
+          <option value="👅">👅</option>
+          <option value="🕴️">🕴️</option>
+          <option value="🏄‍♂️">🏄‍♂️</option>
+          <option value="🤹‍♂️">🤹‍♂️</option>
+          <option value="🤹‍♀️">🤹‍♀️</option>
+          <option value="🏀">🏀</option>
+          <option value="⚽">⚽</option>
+          <option value="🤵">🤵</option>
+          <option value="👰">👰</option>
+          <option value="🎩">🎩</option>
+          <option value="💐">💐</option>
+          <option value="💰">💰</option>
+          <option value="♟️">♟️</option>
+          <option value="🥋">🥋</option>
+          <option value="🎤">🎤</option>
+          <option value="🥳">🥳</option>
+          <option value="🌟">🌟</option>
+          <option value="🎎">🎎</option>
+          <option value="🔮">🔮</option>
+          <option value="📿">📿</option>
+          <option value="📚">📚</option>
+          <option value="💶">💶</option>
+          <option value="💵">💵</option>
+          <option value="🐢">🐢</option>
+          <option value="🦖">🦖</option>
+          <option value="🦕">🦕</option>
+          <option value="🐲">🐲</option>
+          <option value="🐍">🐍</option>
+          <option value="🐊">🐊</option>
+          <option value="🦍">🦍</option>
+          <option value="🦧">🦧</option>
+        </select>
+
         <button onClick={onSubmitUsernameHandler} className="LoggedInButton">
           Log in
         </button>

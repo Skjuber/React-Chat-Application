@@ -11,10 +11,11 @@ const App = () => {
   const [currentMember, setCurrentMember] = useState({});
   const [drone, setDrone] = useState(null);
 
-  const LoggedInHandler = (username) => {
+  const LoggedInHandler = (username, color) => {
     const member = {
       name: username,
       color: generateDarkColorHex(),
+      avatar: color,
     };
     const drone = new window.Scaledrone("F3TaecOklILJ6gfx", {
       data: member,
@@ -33,6 +34,7 @@ const App = () => {
       messageList.push({ data: data, id: member.id, member: member });
       setMessages([...messageList]);
     });
+
     setLoggedIn(true);
     setCurrentMember(member);
     setDrone(drone);
