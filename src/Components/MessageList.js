@@ -3,8 +3,8 @@
 import "./MessageList.css";
 
 const MessageList = ({ messages, currentMember }) => {
-  const renderMessages = (poruka) => {
-    const { data, id, member } = poruka;
+  const renderMessages = (message) => {
+    const { data, id, member } = message;
 
     const className =
       member?.clientData.name === currentMember?.name &&
@@ -33,7 +33,7 @@ const MessageList = ({ messages, currentMember }) => {
 
   return (
     <ul className="Messages-list">
-      {messages.map((matiss) => renderMessages(matiss))}
+      {messages.map((message) => renderMessages(message))}
     </ul>
   );
 };
