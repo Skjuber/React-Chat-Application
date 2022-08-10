@@ -27,7 +27,7 @@ const Input = (props) => {
   return (
     <div>
       <div className="input__error">
-        <h3>{error && <div>PORUKA NE MOŽE BITI PRAZNA!!!</div>}</h3>
+        <h3>{error && <div>This field cannot be blank!</div>}</h3>
         <div className="input__form">
           <form onSubmit={onSubmitHandler} className="input">
             <input
@@ -37,7 +37,7 @@ const Input = (props) => {
                 background: error ? "salmon" : "transparent",
               }}
               type="text"
-              placeholder="Napišite poruku i stisnite Enter"
+              placeholder="Type in your message and press Enter"
               autoFocus={true}
               ref={enteredTextRef}
               onChange={errorHandler}

@@ -3,15 +3,14 @@ import "./MessageList.css";
 const MessageList = ({ messages, currentMember }) => {
   const renderMessages = (message) => {
     const { data, id, member } = message;
-    console.log(message);
-    //Odakle dohvacamo data,id,member?
 
     const className =
-      member?.clientData.name === currentMember.name
+      member.clientData.name === currentMember.name &&
+      member.clientData.avatar === currentMember.avatar &&
+      member.clientData.color === currentMember.color
         ? "Messages-message currentMember"
         : "Messages-message";
 
-    // Kako se točno poruka renderira ode?
     return (
       <li className={className} key={id}>
         <span className="emoji">{member.clientData.avatar}</span>

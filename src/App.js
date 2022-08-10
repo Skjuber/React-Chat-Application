@@ -11,13 +11,13 @@ const App = () => {
   const [currentMember, setCurrentMember] = useState({});
   const [drone, setDrone] = useState(null);
 
-  const LoggedInHandler = (username, color) => {
+  const LoggedInHandler = (username, emoji) => {
     const member = {
       name: username,
       color: generateDarkColorHex(),
-      avatar: color,
+      avatar: emoji,
     };
-    const drone = new window.Scaledrone("F3TaecOklILJ6gfx", {
+    const drone = new window.Scaledrone("7e5u14Kc4CILM9IJ", {
       data: member,
     });
 
@@ -28,11 +28,12 @@ const App = () => {
     });
     const room = drone.subscribe("observable-room");
     room.on("data", (data, member) => {
-      console.log("triggers");
       const messageList = messages;
 
       messageList.push({ data: data, id: member.id, member: member });
+      // debugger;
       setMessages([...messageList]);
+      // debugger;
     });
 
     setLoggedIn(true);
@@ -49,7 +50,6 @@ const App = () => {
       message: message,
     });
   };
-
   return (
     <div>
       <div className="App">

@@ -1,32 +1,32 @@
 .input input {
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 2px solid var(--color-green);
-    flex-grow: 1;
-    
-  }
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--color-green);
+  flex-grow: 1;
   
-  input:focus {
-    outline: none;
-  }
+}
 
-  
-  .input__error h3{
+input:focus {
+  outline: none;
+}
 
-    overflow: visible;
-    
-    text-align: center;
-    color:  red;
+
+.input__error h3{
+
+  overflow: visible;
   
-  
-  }
+  text-align: center;
+  color:  red;
+
+
+}
 
 .input__form form{
-  /*pitati Domu zašto se pošemeri kada maknem form */
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  max-width: 900px;
-  margin: 0 auto 40px;
+/*pitati Domu zašto se pošemeri kada maknem form */
+display: flex;
+width: 100%;
+justify-content: space-between;
+max-width: 900px;
+margin: 0 auto 40px;
 }
