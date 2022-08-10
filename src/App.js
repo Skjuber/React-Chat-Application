@@ -30,7 +30,7 @@ const App = () => {
     room.on("data", (data, member) => {
       const messageList = messages;
 
-      messageList.push({ data: data, id: member.id, member: member });
+      messageList.push({ data: data, id: member?.id, member: member });
       // debugger;
       setMessages([...messageList]);
       // debugger;
