@@ -33,7 +33,7 @@ const Login = (props) => {
   return (
     <div className="login">
       <div className="login__input ">
-        <h5>Log In with your username </h5>
+        <h5>Log in with your username and pick an avatar </h5>
 
         <input
           type="text"

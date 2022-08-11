@@ -2,9 +2,10 @@ import "./App.css";
 import { useState } from "react";
 import Input from "./Components/Input";
 import MessageList from "./Components/MessageList";
-import Header from "./Components/Header";
+import InitialHeader from "./Components/Header/InitialHeader";
 import Login from "./Components/Login";
 import { generateDarkColorHex } from "./utils/Colors";
+import LoggedInHeader from "./Components/Header/LoggedInHeader";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -53,7 +54,11 @@ const App = () => {
   return (
     <div>
       <div className="App">
-        <Header></Header>
+        {!loggedIn && <InitialHeader></InitialHeader>}
+        {loggedIn && (
+          <LoggedInHeader name={currentMember.name}></LoggedInHeader>
+        )}
+
         {!loggedIn && <Login onLogin={LoggedInHandler} />}
         <MessageList
           messages={messages}

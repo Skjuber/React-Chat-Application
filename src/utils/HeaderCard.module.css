@@ -1,0 +1,14 @@
+.header { 
+  overflow: visible;
+    width: 100%;
+    text-align: center;
+    color: var(--color-green);
+    font-size: 45px;
+    font-weight: 2000;
+    letter-spacing: 2px;
+  }
+
+  .header p{
+    font-size: 22px;
+
+  }
