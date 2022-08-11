@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "./Input.css";
+import Button from "../utils/Button";
 const Input = (props) => {
   const enteredTextRef = useRef();
 
@@ -42,7 +43,9 @@ const Input = (props) => {
               ref={enteredTextRef}
               onChange={errorHandler}
             />
-            <button type="submit">Send</button>
+            <Button disabled={error} type="submit">
+              Send
+            </Button>
           </form>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../utils/Button";
 import "./Login.css";
 
 const Login = (props) => {
@@ -152,10 +153,7 @@ const Login = (props) => {
           <option value="🦜">🦜</option>
           <option value="🐣">🐣</option>
         </select>
-
-        <button onClick={onSubmitUsernameHandler} className="LoggedInButton">
-          Log in
-        </button>
+        <Button onClick={onSubmitUsernameHandler}>Log In</Button>
       </div>
     </div>
   );
