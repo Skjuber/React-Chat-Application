@@ -38,7 +38,7 @@ const Input = (props) => {
                 background: error ? "salmon" : "transparent",
               }}
               type="text"
-              placeholder="Type in your message and press Enter"
+              placeholder="Type in your message and press Enter 📤"
               autoFocus={true}
               ref={enteredTextRef}
               onChange={errorHandler}
