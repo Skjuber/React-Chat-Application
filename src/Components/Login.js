@@ -31,17 +31,14 @@ const Login = (props) => {
   };
 
   return (
-    <div className="login">
-      <div className="login__input ">
-        <h5>Log in with your username and pick an avatar </h5>
-
+    <div>
+      <div class="login">
         <input
           type="text"
           placeholder="Enter your username"
           value={username}
           onChange={usernameChangeHandler}
         />
-
         <select onChange={avatarChangeHandler}>
           <option value="👨‍🌾">👨‍🌾</option>
           <option value="👩‍🌾">👩‍🌾</option>
@@ -153,8 +150,10 @@ const Login = (props) => {
           <option value="🦜">🦜</option>
           <option value="🐣">🐣</option>
         </select>
-        <Button onClick={onSubmitUsernameHandler}>Log In</Button>
+
+        <button onClick={onSubmitUsernameHandler}>Log in</button>
       </div>
+      <div></div>
     </div>
   );
 };

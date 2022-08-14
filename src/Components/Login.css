@@ -1,36 +1,105 @@
-.login { 
-    
-    width: 100%;
-    text-align: center;
-    color: var(--color-green);
-    font-size:xx-large;
-    font-weight: 2000;
-  }
 
-  .login__input input {
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 2px solid var(--color-green);
-    flex-grow: 1;
-    
-  }
+.login {
+  background:   whitesmoke;
+  border: 3px solid   var(--color-green);
+  border-radius: 6px;
+  height: 257px;
+  margin: 20px auto 0;
+  width: 298px;
+}
 
+select{
+  border: 1px solid   var(--color-green);
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: auto;
+  transition: box-shadow 0.3s;
+  width: 240px;
+  font-size: x-large;
+  
+  
+  text-align: center;
+  
   
 
+
+
+
+
+}
+
+select:focus {
+  box-shadow: 0 0 4px 1px var(--color-green);;
+  outline: 0;
+
+}
+
+.login input{
  
+  border: 1px solid   var(--color-green);
+  font-size: large;
+  font-weight: normal;
+ 
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color:  black;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding: auto;
+  
+  transition: box-shadow 0.3s;
+  width: 240px;
+  text-align: center;
+  
+}
+.login ::placeholder{
+  font-size: medium;
+  font-weight: 00;
  
 
-   .login select{
-   
-   
-    color: var(--color-green);
-    
- 
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: 2px solid var(--color-green);
-    flex-grow: 1;
- 
-  }
+
+}
+
+.login input:focus {
+  box-shadow: 0 0 4px 1px  var(--color-green);
+  outline: 0;
+}
+
+
+
+
+
+.login button{
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: var(--color-green);
+  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+
+
+
