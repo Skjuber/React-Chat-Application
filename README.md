@@ -15,7 +15,7 @@ You can create your Scaledrone channel for free using this link:https://www.scal
 To connect to the channel you need to paste your channel ID in App.js component
 
 ```javascript
-  /*  Your Scaledrone channel ID goes instead of  "pGbdiqBZtoOeKIow".*/
+  //  Your Scaledrone channel ID goes here instead of  "pGbdiqBZtoOeKIow". //
 const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
       data: member,
     });
