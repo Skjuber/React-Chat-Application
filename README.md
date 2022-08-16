@@ -23,6 +23,14 @@ const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
     });
 ```
 
+# Features
+-Log in with your username.
+-Select your avatar.
+-Use vercel to connect and chat simultaneously with multiple users.
+-User interface enhanced with animations.
+-Each member has unique color for better recognition
+
+
 
 # Getting Started with Create React App
 
