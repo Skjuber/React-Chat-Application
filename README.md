@@ -14,7 +14,7 @@ The app is available on this link: https://scaledrone-react-chat-application.ver
 You can create your Scaledrone channel for free using this link:https://www.scaledrone.com/.
 To connect to the channel you need to paste your channel ID in App.js component
 
-```
+```javascript
   /*  Your Scaledrone channel ID goes instead of  "pGbdiqBZtoOeKIow".*/
 const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
       data: member,
