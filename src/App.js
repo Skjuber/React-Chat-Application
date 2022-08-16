@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Input from "./Components/Input";
-import MessageList from "./Components/MessageList";
+import MessageList from "./Components/Messages/MessageList";
 import InitialHeader from "./Components/Header/InitialHeader";
 import Login from "./Components/Login";
 import { generateDarkColorHex } from "./utils/Colors";

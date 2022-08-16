@@ -8,7 +8,7 @@
   
 }
 
-input:focus {
+.input input:focus {
   box-shadow: 0 0 10px 1px  #741188;;
 }
 
@@ -24,7 +24,7 @@ input:focus {
 }
 
 .input__form form{
-/*pitati Domu zašto se pošemeri kada maknem form */
+
 display: flex;
 width: 100%;
 justify-content: space-between;

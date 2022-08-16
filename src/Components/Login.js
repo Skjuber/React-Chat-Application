@@ -47,7 +47,6 @@ const Login = (props) => {
           <option value="👩‍🎓">👩‍🎓</option>
           <option value="👨‍🏫">👨‍🏫</option>
           <option value="👨‍⚖️">👨‍⚖️</option>
-          <option value="🧑‍⚖️">🧑‍⚖️</option>
           <option value="👨‍🍳">👨‍🍳</option>
           <option value="👩‍🍳">👩‍🍳</option>
           <option value="👨‍🔧">👨‍🔧</option>
@@ -63,8 +62,6 @@ const Login = (props) => {
           <option value="💂‍♂️">💂‍♂️</option>
           <option value="💂‍♀️">💂‍♀️</option>
           <option value="🤱">🤱</option>
-          <option value="👩‍🍼">👩‍🍼</option>
-          <option value="👨‍🍼">👨‍🍼</option>
           <option value="🤰">🤰</option>
           <option value="👳‍♂️">👳‍♂️</option>
           <option value="👳‍♀️">👳‍♀️</option>
