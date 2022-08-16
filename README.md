@@ -2,8 +2,10 @@
 # Chat Application
 
 I started this project while attending Front-End-Development program by Algebra University in Zagreb,Croatia.
+
 This assignment served as a final certification exam.
 The app is available on this [link](https://scaledrone-react-chat-application.vercel.app/ ).
+
 
 # Technologies
 
