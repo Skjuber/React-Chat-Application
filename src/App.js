@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Input from "./Components/Input";
 import MessageList from "./Components/Messages/MessageList";
 import InitialHeader from "./Components/Header/InitialHeader";
@@ -52,7 +52,7 @@ const App = () => {
     });
   };
   return (
-    <div>
+    <Fragment>
       <div className="App">
         {!loggedIn && <InitialHeader></InitialHeader>}
         {loggedIn && (
@@ -67,7 +67,7 @@ const App = () => {
 
         {loggedIn && <Input sendMessage={sendMessage} />}
       </div>
-    </div>
+    </Fragment>
   );
 };
 

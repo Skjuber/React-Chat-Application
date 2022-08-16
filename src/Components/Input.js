@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, Fragment } from "react";
 import "./Input.css";
 import Button from "../utils/Button";
 const Input = (props) => {
@@ -26,7 +26,7 @@ const Input = (props) => {
   };
 
   return (
-    <div>
+    <Fragment>
       <div className="input__error">
         <h3>{error && <div>This field cannot be blank!</div>}</h3>
         <div className="input__form">
@@ -49,7 +49,7 @@ const Input = (props) => {
           </form>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

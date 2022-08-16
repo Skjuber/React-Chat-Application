@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import "./Login.css";
 
@@ -31,7 +31,7 @@ const Login = (props) => {
   };
 
   return (
-    <div>
+    <Fragment>
       <div class="login">
         <input
           type="text"
@@ -151,7 +151,7 @@ const Login = (props) => {
         <button onClick={onSubmitUsernameHandler}>Log in</button>
       </div>
       <div></div>
-    </div>
+    </Fragment>
   );
 };
 
