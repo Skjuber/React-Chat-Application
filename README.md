@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This app is avaiable on this link: https://scaledrone-react-chat-application.vercel.app/
 
 
-Connect to Scaledrone
+# Connect to Scaledrone
+
 You can create your Scaledrone channel for free using this link:https://www.scaledrone.com/
 
 
