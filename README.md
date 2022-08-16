@@ -1,13 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chat Application
 
-This app is avaiable on this link: https://scaledrone-react-chat-application.vercel.app/
+This application was my assignment as a final exam for my Front-end developer bootcamp.
+The app is available on this link: https://scaledrone-react-chat-application.vercel.app/
 
+# Technologies
+
+• React
+• Scaledrone
 
 # Connect to Scaledrone
 
-You can create your Scaledrone channel for free using this link:https://www.scaledrone.com/
+You can create your Scaledrone channel for free using this link:https://www.scaledrone.com/. link.
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 ## Available Scripts
