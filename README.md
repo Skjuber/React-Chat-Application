@@ -1,7 +1,8 @@
 
 # Chat Application
 
-This application was my assignment as a final exam for my Front-end developer bootcamp.
+I started this project while attending Front-End-Development program by Algebra University in Zagreb,Croatia.
+This assignment served as a final certification exam.
 The app is available on this [link](https://scaledrone-react-chat-application.vercel.app/ ).
 
 # Technologies
@@ -14,7 +15,7 @@ The app is available on this [link](https://scaledrone-react-chat-application.ve
 
 You can create your Scaledrone channel for free using this [link](https://www.scaledrone.com/).
 
-To connect to the channel you need to paste your channel ID in App.js component
+To connect to the channel you need to paste your channel ID in App.js component.
 
 ```javascript
   //  Your Scaledrone channel ID goes here instead of  "pGbdiqBZtoOeKIow". //
