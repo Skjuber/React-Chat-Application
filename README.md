@@ -9,7 +9,7 @@ The app is available on this [link](https://scaledrone-react-chat-application.ve
 
 # Technologies
 
-- React
+- React JS 18.2.0 
 - Scaledrone
 
 # Connect to Scaledrone
@@ -29,9 +29,9 @@ const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
 # Features
 -Log in with your username.
 -Select your avatar.
--Use vercel to connect and chat simultaneously with multiple users.
+-Use Vercel to connect and chat simultaneously with multiple users.
 -User interface enhanced with animations.
--Each member has unique color for better recognition
+-Each member has unique color for better recognition.
 
 
 
