@@ -2,7 +2,7 @@
 # Chat Application
 
 This application was my assignment as a final exam for my Front-end developer bootcamp.
-The app is available on this[link](https://scaledrone-react-chat-application.vercel.app/ ).
+The app is available on this [link](https://scaledrone-react-chat-application.vercel.app/ ).
 
 # Technologies
 
