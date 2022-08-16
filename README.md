@@ -7,13 +7,12 @@ The app is available on this link: https://scaledrone-react-chat-application.ver
 # Technologies
 
 • React
-
 • Scaledrone
 
 # Connect to Scaledrone
 
 
-You can create your Scaledrone channel for free using this[link](https://www.scaledrone.com/).
+You can create your Scaledrone channel for free using this [link](https://www.scaledrone.com/).
 
 To connect to the channel you need to paste your channel ID in App.js component
 
