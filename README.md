@@ -1,6 +1,45 @@
+
+# Chat Application
+
+I started this project while attending Front-End-Development program by Algebra University in Zagreb,Croatia.
+
+This assignment served as a final certification exam.
+The app is available on this [link](https://scaledrone-react-chat-application.vercel.app/ ).
+
+
+# Technologies
+
+- React JS 18.2.0 
+- Scaledrone
+
+# Connect to Scaledrone
+
+
+You can create your Scaledrone channel for free using this [link](https://firebase.google.com/).
+
+To connect to the channel you need to paste your channel ID in App.js component.
+
+```javascript
+  //  Your Scaledrone channel ID goes here instead of  "pGbdiqBZtoOeKIow". //
+const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
+      data: member,
+    });
+```
+
+# Features
+- Log in with your username.
+- Select your avatar.
+- Use Vercel to connect and chat simultaneously with multiple users.
+- User interface enhanced with animations.
+- Each member has unique color for better recognition.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
