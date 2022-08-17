@@ -1,42 +1,24 @@
 // import Message from "./Message";
 
 import "./MessageList.css";
+import Message from "./Message";
 
 const MessageList = (props) => {
-  const currentMember = props.currentMember;
-  const messages = props.messages;
+  //  const currentMember = props.currentMember;
+  //const messages = props.messages; Ovo je isto ko ovo drugo
 
-  const renderMessages = (message) => {
-    const { data, id, member } = message;
-
-    const className =
-      member?.clientData.name === currentMember?.name &&
-      member?.clientData.avatar === currentMember?.avatar &&
-      member?.clientData.color === currentMember?.color
-        ? "Messages-message currentMember"
-        : "Messages-message";
-
-    return (
-      <li className={className} key={id}>
-        <span className="emoji">{member?.clientData.avatar}</span>
-        <div className="Message-content">
-          <div
-            className="username"
-            style={{
-              color: member?.clientData.color,
-            }}
-          >
-            {member?.clientData.name}
-          </div>
-          <div className="text">{data}</div>
-        </div>
-      </li>
-    );
-  };
+  const { currentMember, messages } = props;
 
   return (
     <ul className="Messages-list">
-      {messages.map((message) => renderMessages(message))}
+      {messages.map((item) => (
+        <Message
+          data={item.data}
+          id={item.id}
+          member={item.member}
+          currentMember={currentMember}
+        ></Message>
+      ))}
     </ul>
   );
 };
