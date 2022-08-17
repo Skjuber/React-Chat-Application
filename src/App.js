@@ -18,7 +18,7 @@ const App = () => {
       color: generateDarkColorHex(),
       avatar: emoji,
     };
-    const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
+    const drone = new window.Scaledrone("A0UwEce0izDLuIpl", {
       data: member,
     });
 
@@ -51,6 +51,7 @@ const App = () => {
       message: message,
     });
   };
+
   return (
     <Fragment>
       <div className="App">

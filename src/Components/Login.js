@@ -32,7 +32,7 @@ const Login = (props) => {
 
   return (
     <Fragment>
-      <div class="login">
+      <div className="login">
         <input
           type="text"
           placeholder="Enter your username"

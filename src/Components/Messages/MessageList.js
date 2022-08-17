@@ -2,7 +2,10 @@
 
 import "./MessageList.css";
 
-const MessageList = ({ messages, currentMember }) => {
+const MessageList = (props) => {
+  const currentMember = props.currentMember;
+  const messages = props.messages;
+
   const renderMessages = (message) => {
     const { data, id, member } = message;
 
