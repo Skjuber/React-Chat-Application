@@ -2,6 +2,7 @@ import "./Message.css";
 
 const Message = (props) => {
   const { data, id, member, currentMember } = props;
+  console.log(data);
 
   const className =
     member?.clientData.name === currentMember?.name &&
