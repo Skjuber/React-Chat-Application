@@ -1,5 +1,3 @@
-// import Message from "./Message";
-
 import "./MessageList.css";
 import Message from "./Message";
 

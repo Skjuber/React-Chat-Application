@@ -1,5 +1,4 @@
-import HeaderCard from "../../utils/HeaderCard";
-
+import HeaderCard from "../utils/HeaderCard";
 function InitialHeader() {
   return <HeaderCard>CHAT APPLICATION</HeaderCard>;
 }

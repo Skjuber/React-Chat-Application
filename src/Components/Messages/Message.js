@@ -2,9 +2,8 @@ import "./Message.css";
 
 const Message = (props) => {
   const { data, id, member, currentMember } = props;
-  console.log(data);
 
-  const className =
+  const deliveredMessage =
     member?.clientData.name === currentMember?.name &&
     member?.clientData.avatar === currentMember?.avatar &&
     member?.clientData.color === currentMember?.color
@@ -12,7 +11,7 @@ const Message = (props) => {
       : "Messages-message";
 
   return (
-    <li className={className} key={id}>
+    <li className={deliveredMessage} key={id}>
       <span className="emoji">{member?.clientData.avatar}</span>
       <div className="Message-content">
         <div

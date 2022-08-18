@@ -1,10 +1,10 @@
 import "./App.css";
 import React, { useState, Fragment } from "react";
-import Input from "./Components/Input";
+import Input from "./Components/Input/Input";
 import MessageList from "./Components/Messages/MessageList";
 import InitialHeader from "./Components/Header/InitialHeader";
-import Login from "./Components/Login";
-import { generateDarkColorHex } from "./utils/Colors";
+import Login from "./Components/Login/Login";
+import { generateDarkColorHex } from "./Components/utils/Colors";
 import LoggedInHeader from "./Components/Header/LoggedInHeader";
 
 const App = () => {

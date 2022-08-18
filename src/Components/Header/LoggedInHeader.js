@@ -1,4 +1,4 @@
-import HeaderCard from "../../utils/HeaderCard";
+import HeaderCard from "../utils/HeaderCard";
 
 function LoggedInHeader(props) {
   const name = props.name;
