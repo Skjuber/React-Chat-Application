@@ -2,14 +2,6 @@
   --color-green: #00645b;
 }
 
-.App {
-  display: flex;
-  flex-direction:column;
-  justify-content: space-between;
-  
-  background: linear-gradient(270deg, #88daf3 0%, #f3a087 100%);
-  height: 100vh;
-}
 
 * {
   font-family: 'Poppins', 'Times New Roman', Times, serif;
