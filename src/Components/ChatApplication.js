@@ -6,7 +6,6 @@ import InitialHeader from "./Header/InitialHeader";
 import Login from "./Login/Login";
 import { generateDarkColorHex } from "./utils/Colors";
 import LoggedInHeader from "./Header/LoggedInHeader";
-import { generateDrone } from "./Drone";
 
 const ChatApplication = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -20,7 +19,15 @@ const ChatApplication = () => {
       avatar: emoji,
     };
 
-    const drone = generateDrone(member);
+    const drone = new window.Scaledrone("hDUiK32SFbij9uya", {
+      data: member,
+    });
+
+    drone.on("open", (error) => {
+      if (error) {
+        return console.error(error);
+      }
+    });
 
     const room = drone.subscribe("observable-room");
     room.on("data", (data, member) => {
