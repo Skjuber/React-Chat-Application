@@ -6,25 +6,31 @@ import InitialHeader from "./Header/InitialHeader";
 import Login from "./Login/Login";
 import { generateDarkColorHex } from "./utils/Colors";
 import LoggedInHeader from "./Header/LoggedInHeader";
+import ErrorHeader from "./Header/ErrorHeader";
 
 const ChatApplication = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentMember, setCurrentMember] = useState({});
   const [drone, setDrone] = useState(null);
 
-  const LoggedInHandler = (username, emoji) => {
+  const LoggedInHandler = (username, emoji, channel_ID) => {
     const member = {
       name: username,
       color: generateDarkColorHex(),
       avatar: emoji,
     };
 
-    const drone = new window.Scaledrone("hDUiK32SFbij9uya", {
+    const drone = new window.Scaledrone(channel_ID, {
       data: member,
     });
 
     drone.on("open", (error) => {
       if (error) {
+        setLoggedIn(false);
+        setDrone(null);
+        alert(`${error}.
+         We are reverting you to login page.`);
+
         return console.error(error);
       }
     });

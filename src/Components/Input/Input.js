@@ -8,7 +8,6 @@ const Input = (props) => {
   const errorHandler = () => setError(null);
 
   const onSubmitHandler = (e) => {
-    console.log(enteredTextRef);
     const enteredText = enteredTextRef.current.value;
 
     if (enteredText.trim().length === 0) {

@@ -9,11 +9,15 @@ const Login = (props) => {
   const randomEmoji = generateRandomEmoji(emojis);
 
   const [username, setUsername] = useState("");
+  const [channel_ID, setChannel_ID] = useState("cUe84swfYSnYUQUW");
 
   const [avatar, setAvatar] = useState(randomEmoji);
 
   const usernameChangeHandler = (event) => {
     setUsername(event.target.value);
+  };
+  const channel_IDChangeHandler = (event) => {
+    setChannel_ID(event.target.value);
   };
 
   const avatarChangeHandler = (event) => {
@@ -23,6 +27,7 @@ const Login = (props) => {
   const onSubmitUsernameHandler = () => {
     const enteredUsername = username;
     const enteredAvatar = avatar;
+    const enteredchannel = channel_ID;
 
     if (enteredUsername.trim().length === 0) {
       alert("USERNAME CANNOT BE EMPTY!");
@@ -30,9 +35,15 @@ const Login = (props) => {
       return;
     }
 
+    if (channel_ID.trim().length != 16) {
+      alert("Channel ID must have 16 characters!");
+
+      return;
+    }
+
     //e.preventDefault();
     // sruši se kad napravim ovo ;
-    else props.onLogin(enteredUsername, enteredAvatar);
+    else props.onLogin(enteredUsername, enteredAvatar, enteredchannel);
   };
 
   return (
@@ -44,6 +55,7 @@ const Login = (props) => {
           value={username}
           onChange={usernameChangeHandler}
         />
+
         <select onChange={avatarChangeHandler}>
           <option id="randomEmoji" value={randomEmoji} key="First Key">
             🎲Random avatar
@@ -55,6 +67,12 @@ const Login = (props) => {
             </option>
           ))}
         </select>
+        <input
+          type="text"
+          placeholder="Enter your channelID"
+          value={channel_ID}
+          onChange={channel_IDChangeHandler}
+        />
 
         <button onClick={onSubmitUsernameHandler}>Log in</button>
       </div>
