@@ -48,7 +48,7 @@ const Login = (props) => {
           <option value={randomEmoji}> 🎲Random avatar</option>
 
           {emojis.map((item) => (
-            <option value={item} key={Math.random() + Math.random()}>
+            <option value={item} key={item}>
               {item}
             </option>
           ))}
