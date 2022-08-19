@@ -5,6 +5,8 @@
  
   border: 2px solid var(--color-green);
   flex-grow: 1;
+  transition: box-shadow 0.35s;
+  
   
 }
 

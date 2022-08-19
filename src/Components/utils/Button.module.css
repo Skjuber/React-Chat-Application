@@ -8,12 +8,17 @@
    
     border-radius: 8px;
     margin-left: 10px;
+    transition: all  0.5s ease-in-out;
   }
   
   .button:hover,
   .button:active {
     background: #741188;
     border-color: #741188;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #741188;
+    transform: translate(0.25em);
+   
   }
   
   .button:focus {
@@ -28,10 +33,11 @@ button:active:disabled {
   border-color: #ccc;
   color: #666666;
   cursor: not-allowed;
+  box-shadow: none;
 
   -webkit-transform: rotateZ(-360deg);
   -ms-transform: rotateZ(-360deg);
   transform: rotateZ(-360deg);
   
-transition: -webkit-transfom, -ms-transform, transform 0.7s;
+
 }

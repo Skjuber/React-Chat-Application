@@ -1,6 +1,8 @@
 .login {
   background:   whitesmoke;
   border: 3px solid   var(--color-green);
+  border-top: 3px solid #741188;
+  border-bottom: 3px solid #741188;
   border-radius: 40px;
   height: 257px;
   margin: 42px auto;
@@ -22,6 +24,8 @@
   
   text-align: center;
 
+  transition: all 0.35s ease-in-out
+
 
  
 
@@ -32,6 +36,7 @@
 }
 .login select:focus {
   box-shadow: 0 0 4px 1px var(--color-green);
+  font-size: 23px;
  
   
  
@@ -107,6 +112,7 @@
   border-bottom-left-radius:5px;
   border: none;
   box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+  transition: all 0.35s ease-in-out
 }
 
 
@@ -132,4 +138,3 @@
 
  
 }
-

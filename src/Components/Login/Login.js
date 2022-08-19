@@ -45,7 +45,7 @@ const Login = (props) => {
           onChange={usernameChangeHandler}
         />
         <select onChange={avatarChangeHandler}>
-          <option value={randomEmoji} key="First Key">
+          <option id="randomEmoji" value={randomEmoji} key="First Key">
             🎲Random avatar
           </option>
 
