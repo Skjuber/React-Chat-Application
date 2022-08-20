@@ -6,11 +6,12 @@ import InitialHeader from "./Header/InitialHeader";
 import Login from "./Login/Login";
 import { generateDarkColorHex } from "./utils/Colors";
 import LoggedInHeader from "./Header/LoggedInHeader";
-//
+//THIS IS A TEST
 const ChatApplication = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentMember, setCurrentMember] = useState({});
   const [drone, setDrone] = useState(null);
+  console.log("test");
 
   const LoggedInHandler = (username, emoji, channel_ID) => {
     const member = {
