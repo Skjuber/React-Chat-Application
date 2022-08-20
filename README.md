@@ -1,10 +1,8 @@
 
 # Chat Application
 
-I started this project while attending Front-End-Development program by Algebra University in Zagreb,Croatia.
-
-This assignment served as a final certification exam.
-The app is available on this [link](https://scaledrone-react-chat-application.vercel.app/ ).
+I started this project while attending the Front-End-Development program at Algebra University in Zagreb, Croatia.
+This assignment served as a final certification exam. You can test out the app's functionality [here](https://scaledrone-react-chat-application.vercel.app/ ).
 
 
 # Technologies
@@ -15,14 +13,16 @@ The app is available on this [link](https://scaledrone-react-chat-application.ve
 # Connect to Scaledrone
 
 
-You can create your Scaledrone channel for free using this [link](https://firebase.google.com/).
+You can create your Scaledrone channel for free [here](https://www.scaledrone.com/).
+To connect to the channel just enter your channel ID in the third input field. 
+Alternatively, you can paste a channel ID in the Chat-Application.js component.
 
-To connect to the channel you need to paste your channel ID in App.js component.
 
 ```javascript
-  //  Your Scaledrone channel ID goes here instead of  "pGbdiqBZtoOeKIow". //
-const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
+  //  Your Scaledrone channel ID goes here instead of  channel_ID. //
+       const drone = new window.Scaledrone(channel_ID, {
       data: member,
+    });
     });
 ```
 
@@ -31,7 +31,8 @@ const drone = new window.Scaledrone("pGbdiqBZtoOeKIow", {
 - Select your avatar.
 - Use Vercel to connect and chat simultaneously with multiple users.
 - User interface enhanced with animations.
-- Each member has unique color for better recognition.
+- Each member has a unique color for better recognition.
+- Enter your own channel ID.
 
 
 
