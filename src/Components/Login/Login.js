@@ -36,7 +36,7 @@ const Login = (props) => {
     }
 
     if (channel_ID.trim().length != 16) {
-      alert("Channel ID must have 16 characters!");
+      alert("Invalid Channel ID!");
 
       return;
     }
