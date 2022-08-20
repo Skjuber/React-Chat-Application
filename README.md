@@ -32,7 +32,7 @@ Alternatively, you can paste a channel ID in the Chat-Application.js component.
 - Use Vercel to connect and chat simultaneously with multiple users.
 - User interface enhanced with animations.
 - Each member has a unique color for better recognition.
-- Enter your own generated channel ID.
+- Enter your own channel ID.
 
 
 
