@@ -2,7 +2,7 @@
 # Chat Application
 
 I started this project while attending the Front-End-Development program at Algebra University in Zagreb, Croatia.
-This assignment served as a final certification exam. You can test out the app's functionality here [link](https://scaledrone-react-chat-application.vercel.app/ ).
+This assignment served as a final certification exam. You can test out the app's functionality [here](https://scaledrone-react-chat-application.vercel.app/ ).
 
 
 # Technologies
