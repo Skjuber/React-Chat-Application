@@ -3,7 +3,6 @@ import Avatar from "./MessageData/Avatar";
 import Username from "./MessageData/Username";
 import Text from "./MessageData/Text";
 
-//Ovo je vjezba
 const Message = (props) => {
   const { data, id, member, currentMember } = props;
 
