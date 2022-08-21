@@ -10,7 +10,7 @@ const Login = (props) => {
   const randomEmoji = generateRandomEmoji();
 
   const [username, setUsername] = useState("");
-  const [channel_ID, setChannel_ID] = useState("DNaxwGBiTxg2bqbd");
+  const [channel_ID, setChannel_ID] = useState("jmfB5sdkTRc8QyA1");
   const [avatar, setAvatar] = useState(randomEmoji);
 
   const usernameChangeHandler = (typedUsername) => {
