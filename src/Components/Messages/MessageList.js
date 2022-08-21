@@ -2,9 +2,6 @@ import "./MessageList.css";
 import Message from "./Message";
 
 const MessageList = (props) => {
-  //  const currentMember = props.currentMember;
-  //const messages = props.messages; Ovo je isto ko ovo drugo
-
   const { currentMember, messages } = props;
 
   return (

@@ -1,9 +1,9 @@
 import React, { useState, Fragment } from "react";
 
-import UsernameLoginInput from "./UsernameLoginInput";
-import Channel_ID_LoginInput from "./Channel_ID_LoginInput";
-import AvatarSelectList from "./AvatarSelectList";
-import { generateRandomEmoji } from "./RandomEmoji";
+import UsernameLoginInput from "./LoginData/UsernameLoginInput";
+import Channel_ID_LoginInput from "./LoginData/Channel_ID_LoginInput";
+import AvatarSelectList from "./LoginData/AvatarSelectList";
+import { generateRandomEmoji } from "./LoginData/RandomEmoji";
 import "./Login.css";
 
 const Login = (props) => {
@@ -36,7 +36,7 @@ const Login = (props) => {
       return;
     }
 
-    if (channel_ID.trim().length != 16) {
+    if (channel_ID.trim().length !== 16) {
       alert("Invalid Channel ID!");
 
       return;
