@@ -1,6 +1,6 @@
 import "./Avatar.css";
 const Avatar = (props) => {
-  const avatar = props.avatar;
+  const { avatar } = props;
 
   return <span className="emoji">{avatar}</span>;
 };

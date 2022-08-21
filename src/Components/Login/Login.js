@@ -1,26 +1,28 @@
 import React, { useState, Fragment } from "react";
-import { generateRandomEmoji } from "./RandomEmoji";
-import { generateEmojis } from "./EmojiList";
 
+import UsernameLoginInput from "./UsernameLoginInput";
+import Channel_ID_LoginInput from "./Channel_ID_LoginInput";
+import AvatarSelectList from "./AvatarSelectList";
+import { generateRandomEmoji } from "./RandomEmoji";
 import "./Login.css";
 
 const Login = (props) => {
-  const emojis = generateEmojis();
-  const randomEmoji = generateRandomEmoji(emojis);
+  const randomEmoji = generateRandomEmoji();
 
   const [username, setUsername] = useState("");
-  const [channel_ID, setChannel_ID] = useState("jIDs4AJl2weIBKOD");
+  const [channel_ID, setChannel_ID] = useState("DNaxwGBiTxg2bqbd");
   const [avatar, setAvatar] = useState(randomEmoji);
 
-  const usernameChangeHandler = (event) => {
-    setUsername(event.target.value);
-  };
-  const channel_IDChangeHandler = (event) => {
-    setChannel_ID(event.target.value);
+  const usernameChangeHandler = (typedUsername) => {
+    setUsername(typedUsername);
   };
 
-  const avatarChangeHandler = (event) => {
-    setAvatar(event.target.value);
+  const channel_IDChangeHandler = (typedChannel_ID) => {
+    setChannel_ID(typedChannel_ID);
+  };
+
+  const avatarChangeHandler = (selectedAvatar) => {
+    setAvatar(selectedAvatar);
   };
 
   const onSubmitUsernameHandler = () => {
@@ -48,30 +50,19 @@ const Login = (props) => {
   return (
     <Fragment>
       <div className="login">
-        <input
-          type="text"
-          placeholder="Enter your username"
-          value={username}
-          onChange={usernameChangeHandler}
-        />
+        <UsernameLoginInput
+          typed={username}
+          onUsernameLogin={usernameChangeHandler}
+        ></UsernameLoginInput>
 
-        <select onChange={avatarChangeHandler}>
-          <option id="randomEmoji" value={randomEmoji} key="First Key">
-            🎲Random avatar
-          </option>
-
-          {emojis.map((item) => (
-            <option value={item} key={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <input
-          type="text"
-          placeholder="Enter your channelID"
-          value={channel_ID}
-          onChange={channel_IDChangeHandler}
-        />
+        <AvatarSelectList
+          selected={avatar}
+          onSelectedAvatar={avatarChangeHandler}
+        ></AvatarSelectList>
+        <Channel_ID_LoginInput
+          typed={channel_ID}
+          onChannel_ID_Login={channel_IDChangeHandler}
+        ></Channel_ID_LoginInput>
 
         <button onClick={onSubmitUsernameHandler}>Log in</button>
       </div>
