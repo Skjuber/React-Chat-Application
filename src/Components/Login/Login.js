@@ -10,7 +10,6 @@ const Login = (props) => {
 
   const [username, setUsername] = useState("");
   const [channel_ID, setChannel_ID] = useState("cUe84swfYSnYUQUW");
-
   const [avatar, setAvatar] = useState(randomEmoji);
 
   const usernameChangeHandler = (event) => {
@@ -27,7 +26,7 @@ const Login = (props) => {
   const onSubmitUsernameHandler = () => {
     const enteredUsername = username;
     const enteredAvatar = avatar;
-    const enteredchannel = channel_ID;
+    const enteredChannel = channel_ID;
 
     if (enteredUsername.trim().length === 0) {
       alert("USERNAME CANNOT BE EMPTY!");
@@ -43,7 +42,7 @@ const Login = (props) => {
 
     //e.preventDefault();
     // sruši se kad napravim ovo ;
-    else props.onLogin(enteredUsername, enteredAvatar, enteredchannel);
+    else props.onLogin(enteredUsername, enteredAvatar, enteredChannel);
   };
 
   return (

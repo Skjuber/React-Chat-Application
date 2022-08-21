@@ -1,34 +1,4 @@
-.Messages-message {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  
-  
-  .Messages-message.currentMember {
-    /*justify-content: flex-end;*/
-    flex-direction: row-reverse;
-    text-align: right;
-  } 
-  
-  
-  .Message-content {
-    display: inline-block;
-  }
-  
-  
-  
-  .currentMember > .Message-content {
-    align-items: flex-end;
-  }
-  
-
-  
- 
-  
-  
-  
-  .Message-content > .text {
+.Message-content > .text {
     padding: 10px;
     max-width: 400px;
     margin: 0;
@@ -48,6 +18,4 @@
   .currentMember > .Message-content .text {
     background-color:  whitesmoke;
   } 
-  
-  
   
