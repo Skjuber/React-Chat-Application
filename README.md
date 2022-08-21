@@ -26,6 +26,7 @@ const drone = new window.Scaledrone(channel_ID, {
 - Log in with your username.
 - Select your avatar.
 - Use Vercel to connect and chat simultaneously with multiple users.
+- Duplicate tabs to log in with multiple users on same computer.
 - User interface enhanced with animations.
 - Each member has a unique color for better recognition.
 - Enter your own channel ID.
