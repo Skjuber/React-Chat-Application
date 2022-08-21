@@ -1,6 +1,7 @@
 import { useRef, useState, Fragment } from "react";
 import "./Input.css";
 import Button from "../utils/Button";
+import InputError from "./InputError";
 const Input = (props) => {
   const enteredTextRef = useRef();
 
@@ -28,7 +29,7 @@ const Input = (props) => {
   return (
     <Fragment>
       <div className="input__error">
-        <h3>{error && <div>This field cannot be blank!</div>}</h3>
+        {error && <InputError></InputError>}
         <div className="input__form">
           <form onSubmit={onSubmitHandler} className="input">
             <input
