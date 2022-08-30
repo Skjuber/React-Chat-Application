@@ -101,7 +101,7 @@
   text-shadow:1px 1px 0px #37a69b;
   padding-top:6px;
   margin: 46px 0 0 0px;
-  position:fixed;
+  position:static;
  
   
   cursor:pointer;
