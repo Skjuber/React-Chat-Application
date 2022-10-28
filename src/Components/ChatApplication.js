@@ -8,9 +8,11 @@ import { generateDarkColorHex } from "./utils/Colors";
 import LoggedInHeader from "./Header/LoggedInHeader";
 
 const ChatApplication = () => {
+  // this.setState({loggedIn:whatever we set it})
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentMember, setCurrentMember] = useState({});
   const [drone, setDrone] = useState(null);
+  // const [messages, setMessages] = useState([]);
 
   const LoggedInHandler = (username, emoji, channel_ID) => {
     const member = {

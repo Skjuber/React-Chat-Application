@@ -1,7 +1,9 @@
 import { useRef, useState, Fragment } from "react";
 import "./Input.css";
+import "./InputError.css";
 import Button from "../utils/Button";
 import InputError from "./InputError";
+
 const Input = (props) => {
   const enteredTextRef = useRef();
 

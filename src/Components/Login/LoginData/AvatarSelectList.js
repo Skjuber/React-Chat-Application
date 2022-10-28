@@ -21,6 +21,8 @@ const AvatarSelectList = (props) => {
         </option>
       ))}
     </select>
+    //Objasni profesoru za keys: Zasto je bolje koristiti item kao key nego math.random() i index
+    //Index bi mogli proslijediti uz item ovako : item,i.
   );
 };
 
